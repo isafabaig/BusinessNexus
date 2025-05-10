@@ -9,6 +9,12 @@ interface Message {
   timestamp: string;
 }
 
+interface Chat {
+  investorId: string;
+  entrepreneurId: string;
+  messages: Message[];
+}
+
 export default function ChatPage() {
   const params = useParams() as Record<string, string>;
   const userId = params?.userId;
@@ -18,9 +24,9 @@ export default function ChatPage() {
   useEffect(() => {
     const fetchChat = async () => {
       const res = await fetch('/data/chats.json');
-      const chats = await res.json();
+      const chats: Chat[] = await res.json();
 
-      const chat = chats.find((c: any) =>
+      const chat = chats.find((c) =>
         c.investorId === userId || c.entrepreneurId === userId
       );
 

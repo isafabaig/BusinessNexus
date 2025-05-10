@@ -2,13 +2,14 @@
 
 import { useParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { investors } from '../../../../../public/data/investor';
 import ChatModal from '@/components/ChatModal';
 
 export default function InvestorProfilePage() {
   const { id } = useParams();
   const [investor, setInvestor] = useState<typeof investors[0] | null>(null);
-  const [isChatOpen, setIsChatOpen] = useState(false); // State for controlling chat modal visibility
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   useEffect(() => {
     const found = investors.find((i) => String(i.id) === id);
@@ -16,11 +17,11 @@ export default function InvestorProfilePage() {
   }, [id]);
 
   const openChat = () => {
-    setIsChatOpen(true); // Open chat modal
+    setIsChatOpen(true);
   };
 
   const closeChat = () => {
-    setIsChatOpen(false); // Close chat modal
+    setIsChatOpen(false);
   };
 
   if (!investor) {
@@ -31,10 +32,13 @@ export default function InvestorProfilePage() {
     <div className="p-8 bg-gray-50 rounded-lg shadow-lg">
       <h1 className="text-4xl font-bold text-blue-900 mb-6">Investor Profile</h1>
       <div className="flex items-center space-x-8">
-        <img
+        {/* Use Next.js Image component for optimization */}
+        <Image
           src={investor.image}
           alt={investor.name}
-          className="w-40 h-40 rounded-full border-4 border-blue-950 object-cover"
+          width={160}
+          height={160}
+          className="rounded-full border-4 border-blue-950 object-cover"
         />
         <div>
           <h2 className="text-3xl font-semibold text-gray-800">{investor.name}</h2>
@@ -43,7 +47,7 @@ export default function InvestorProfilePage() {
           <div className="mt-4 space-y-2">
             <p>Email: <a href={`mailto:${investor.email}`} className="text-blue-600 hover:underline">{investor.email}</a></p>
             <p>Phone: {investor.phone}</p>
-            <p>Website: <a href={investor.website} target="_blank" className="text-blue-600 hover:underline">{investor.website}</a></p>
+            <p>Website: <a href={investor.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{investor.website}</a></p>
             <p>Organization: {investor.organization}</p>
           </div>
         </div>

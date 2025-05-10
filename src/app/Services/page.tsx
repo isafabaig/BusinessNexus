@@ -38,7 +38,7 @@ export default function ServicesSection() {
           <FaDollarSign className="text-4xl text-blue-600 mb-4" />
           <h3 className="text-2xl font-semibold text-blue-800 mb-2">Financial Planning</h3>
           <p className="text-gray-600">
-            Our financial planning services help you secure your business's future with robust strategies for growth.
+            Our financial planning services help you secure your business&rsquo;s future with robust strategies for growth.
           </p>
         </div>
       </div>

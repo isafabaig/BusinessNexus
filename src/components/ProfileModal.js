@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image'; // Import the Image component from Next.js
 
 const ProfileModal = ({ onClose }) => {
   return (
@@ -13,10 +14,12 @@ const ProfileModal = ({ onClose }) => {
           ✕
         </button>
         <div className="flex flex-col items-center space-y-4">
-          <img
+          <Image
             src="/image/investor-1.jpg"
             alt="Investor"
-            className="w-24 h-24 rounded-full object-cover"
+            width={96} 
+            height={96}  
+            className="rounded-full object-cover"
           />
           <h2 className="text-xl font-semibold">Zara Ahmed</h2>
           <p className="text-sm text-center">Long-term equity investor with 10+ years of experience. Focuses on technology and healthcare sectors.</p>

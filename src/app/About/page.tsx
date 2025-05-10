@@ -7,7 +7,7 @@ export default function AboutBusinessNexus() {
 
       {/* About Paragraph */}
       <p className="text-lg text-gray-700 mb-8 text-center max-w-3xl mx-auto">
-        Business Nexus is a dynamic platform that connects entrepreneurs and investors, creating a collaborative ecosystem to foster innovation and growth. Our goal is to bridge the gap between visionaries and investors by offering a seamless, user-friendly environment where ideas are nurtured and partnerships are formed. Whether you're an entrepreneur seeking investment or an investor looking for the next big opportunity, Business Nexus is here to guide you every step of the way.
+        Business Nexus is a dynamic platform that connects entrepreneurs and investors, creating a collaborative ecosystem to foster innovation and growth. Our goal is to bridge the gap between visionaries and investors by offering a seamless, user-friendly environment where ideas are nurtured and partnerships are formed. Whether you&rsquo;re an entrepreneur seeking investment or an investor looking for the next big opportunity, Business Nexus is here to guide you every step of the way.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
