@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "name": "Zara Ahmed",
+      "bio": "Angel investor focused on EdTech.",
+      "interests": ["Education", "AI", "Startups"],
+      "portfolio": ["Learnly", "SmartTutor"]
+    },
+    {
+      "id": 2,
+      "name": "Sarafarz Khan",
+      "bio": "Venture capitalist with a focus on green technologies.",
+      "interests": ["Sustainability", "Renewable Energy"],
+      "portfolio": ["EcoHome", "Greenify"]
+    }
+  ]
+  

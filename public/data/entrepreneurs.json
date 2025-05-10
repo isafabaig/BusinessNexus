@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Ayesha Khan",
+      "startup": "GreenTech Solutions",
+      "pitch": "Eco-friendly energy solutions for urban homes.",
+      "bio": "Founder of GreenTech, passionate about sustainability.",
+      "fundingNeed": "$100,000",
+      "pitchDeck": "Link to deck"
+    },
+    {
+      "id": 2,
+      "name": "Ali Raza",
+      "startup": "EduSpark",
+      "pitch": "AI-powered personalized learning.",
+      "bio": "Ex-teacher turning education into innovation.",
+      "fundingNeed": "$50,000",
+      "pitchDeck": "Link to deck"
+    }
+  ]
+  

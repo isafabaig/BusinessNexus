@@ -1,0 +1,19 @@
+[
+    {
+      "investorId": "1",
+      "entrepreneurId": "101",
+      "messages": [
+        {
+          "sender": "Ali Raza",
+          "text": "Hello, I'm interested in your startup.",
+          "timestamp": "2025-05-08T10:00:00Z"
+        },
+        {
+          "sender": "Sara Khan",
+          "text": "Hi Ali, thanks! Let me know how you'd like to proceed.",
+          "timestamp": "2025-05-08T10:01:30Z"
+        }
+      ]
+    }
+  ]
+  

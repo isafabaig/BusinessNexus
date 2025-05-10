@@ -1,0 +1,15 @@
+
+  [
+  {
+    "id": 1,
+    "investorId": 1,
+    "entrepreneurId": 2,
+    "status": "pending"
+  },
+  {
+    "id": 2,
+    "investorId": 2,
+    "entrepreneurId": 1,
+    "status": "accepted"
+  }
+]
